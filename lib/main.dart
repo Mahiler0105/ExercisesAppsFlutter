@@ -1,3 +1,4 @@
+import 'package:exercises_apps/features/tok_tik/presentation/providers/tok_tik_provider.dart';
 import 'package:exercises_apps/navigation/main_router.dart';
 import 'package:exercises_apps/theme/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -12,10 +13,11 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)  {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => ChatProvider())
+        ChangeNotifierProvider(create: (_) => ChatProvider()),
+        ChangeNotifierProvider(lazy: false, create: (_) => TokTikProvider()..loadNextPage()),
       ],
       child: MaterialApp(
         onGenerateRoute: MainRouter.generateRoute,

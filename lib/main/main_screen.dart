@@ -6,12 +6,23 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Center(
-        child: FilledButton(onPressed: () {
-          Navigator.pushNamed(context, MainRouter.yesNoAppRoute);
-        }, child: const Text("Ir a YES NO APP")),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FilledButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, MainRouter.yesNoAppRoute);
+                },
+                child: const Text("Ir a YES NO APP")),
+            FilledButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, MainRouter.tokTikAppRoute);
+                },
+                child: const Text("Ir a TokTik")),
+          ],
+        ),
       ),
     );
   }
