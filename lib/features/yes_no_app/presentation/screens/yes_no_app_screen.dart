@@ -5,6 +5,8 @@ import '../../domain/entities/message.dart';
 import '../widgets/index.dart';
 
 class YesNoAppScreen extends StatelessWidget {
+  static const String name = "yes_no_app_screen";
+
   const YesNoAppScreen({super.key});
 
   @override

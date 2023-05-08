@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import '../widgets/shared/video_scrollable_view.dart';
 
 class TokTikScreen extends StatelessWidget {
+  static const String name = "tok_tik_app_screen";
+
   const TokTikScreen({super.key});
 
   @override

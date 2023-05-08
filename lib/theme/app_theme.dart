@@ -15,10 +15,17 @@ const List<Color> colorThemes = [
 class AppTheme {
   final int selectedColor;
 
-  AppTheme({this.selectedColor = 0}) : assert(selectedColor >= 0 && selectedColor < colorThemes.length - 1, 'Colors must be between 0 and ${colorThemes.length}');
+  AppTheme({this.selectedColor = 0})
+      : assert(selectedColor >= 0 && selectedColor < colorThemes.length - 1,
+            'Colors must be between 0 and ${colorThemes.length}');
 
-  ThemeData theme(){
-    return ThemeData(useMaterial3: true, brightness: Brightness.dark, colorSchemeSeed: colorThemes[selectedColor]);
+  ThemeData theme() {
+    return ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.light,
+        colorSchemeSeed: colorThemes[selectedColor],
+        appBarTheme: const AppBarTheme(
+          centerTitle: false,
+        ));
   }
-
 }

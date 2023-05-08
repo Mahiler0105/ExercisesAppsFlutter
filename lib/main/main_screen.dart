@@ -1,8 +1,11 @@
-import 'package:exercises_apps/navigation/main_router.dart';
+import 'package:exercises_apps/main/menu_item.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:photo_view/photo_view.dart';
 
 class MainScreen extends StatefulWidget {
+  static const String name = "main_screen";
+
   const MainScreen({super.key});
 
   @override
@@ -15,22 +18,27 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            FilledButton(
-                onPressed: () => Navigator.pushNamed(context, MainRouter.yesNoAppRoute),
-                child: const Text("Ir a YES NO APP")),
-            FilledButton(
-                onPressed: () => Navigator.pushNamed(context, MainRouter.tokTikAppRoute),
-                child: const Text("Ir a TokTik")),
-            FilledButton(
-                onPressed: () => _showAlert(context),
-                child: const Text("Aguuuuu papá/mamá")),
-          ],
-        ),
+      appBar: AppBar(
+        title: const Text("Exercises App"),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => _showAlert(context),
+        child: const Icon(Icons.family_restroom),
+      ),
+      body: ListView.builder(itemCount: appMainMenuItems.length, itemBuilder: (context, index) {
+        final appMainMenuItem = appMainMenuItems[index];
+        return Column(
+          children: [
+            ListTile(
+              title: Text(appMainMenuItem.title),
+              subtitle: Text(appMainMenuItem.subTitle),
+              leading: Icon(appMainMenuItem.icon),
+              onTap: () =>  context.pushNamed(appMainMenuItem.link),
+            ),
+            const Divider(),
+          ],
+        );
+      } ),
     );
   }
 

@@ -26,9 +26,8 @@ class MyApp extends StatelessWidget {
             lazy: false,
             create: (_) => TokTikProvider(videoPostRepository)..loadNextPage()),
       ],
-      child: MaterialApp(
-        onGenerateRoute: MainRouter.generateRoute,
-        initialRoute: MainRouter.mainRoute,
+      child: MaterialApp.router(
+        routerConfig: router,
         title: 'Exercises App',
         theme: AppTheme(selectedColor: 1).theme(),
       ),
