@@ -1,50 +1,32 @@
 List<Map<String, dynamic>> videoPosts = [
   {
-    'name': 'Subiendo escaleras automáticas',
+    'name': 'Yo traumada contigo 🥲',
     'videoUrl': 'assets/tok-tik/1.mp4',
-    'likes': 23230,
-    'views': 1523,
+    'likes': 150000,
+    'views': 2523000,
   },
   {
-    'name': 'Planta apreciada por peatones',
+    'name': 'Mi pelo cuando despierto (con tanas) 👩‍🦲',
     'videoUrl': 'assets/tok-tik/2.mp4',
     'likes': 24230,
     'views': 1343,
   },
   {
-    'name': 'Que borroso veo todo!',
+    'name': 'Nadie se compara a ti 🎵',
     'videoUrl': 'assets/tok-tik/3.mp4',
-    'likes': 21564320,
-    'views': 123563,
+    'likes': 215643200,
+    'views': 5235630000,
   },
   {
-    'name': '¿Esto es trigo? que interesante',
+    'name': 'No soy una loba auuuuuuu... 🐺',
     'videoUrl': 'assets/tok-tik/4.mp4',
     'likes': 320,
     'views': 2300,
   },
   {
-    'name': 'El COVID no me afecta',
+    'name': 'Modo emo - sexy ON 🔥',
     'videoUrl': 'assets/tok-tik/5.mp4',
-    'likes': 3230,
-    'views': 31030,
-  },
-  {
-    'name': 'No quiero ir a trabajar hoy señor Stark',
-    'videoUrl': 'assets/tok-tik/6.mp4',
-    'likes': 10,
-    'views': 330,
-  },
-  {
-    'name': 'Limpiar nunca fue tan divertido',
-    'videoUrl': 'assets/tok-tik/7.mp4',
-    'likes': 1320,
-    'views': 33032,
-  },
-  {
-    'name': '¿Ya llegamos a la India?... umm si',
-    'videoUrl': 'assets/tok-tik/8.mp4',
-    'likes': 342,
-    'views': 3332,
-  },
+    'likes': 80000023000,
+    'views': 945230000000,
+  }
 ];
