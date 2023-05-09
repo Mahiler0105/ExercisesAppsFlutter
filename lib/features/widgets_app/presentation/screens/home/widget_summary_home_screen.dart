@@ -1,6 +1,7 @@
 import 'package:exercises_apps/features/widgets_app/config/menu/menu_items.dart';
 import 'package:exercises_apps/main/menu_item.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class WidgetSummaryHomeScreen extends StatelessWidget{
   static const String name = "widget_summary_home_screen";
@@ -49,6 +50,7 @@ class _CustomListTile extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       leading: Icon(menuItem.icon, color: color.primary),
       trailing: Icon(Icons.arrow_forward_ios_rounded, color: color.primary),
+      onTap: () => context.pushNamed(menuItem.link),
     );
   }
 }
