@@ -18,4 +18,19 @@ const appWidgetMenuItems = <MenuItem>[
       subTitle: 'Generales y Controlados',
       link: ProgressScreen.name,
       icon: Icons.refresh_rounded),
+  MenuItem(
+      title: 'Snackbars y Dialogos',
+      subTitle: 'Indicadores de pantalla',
+      link: SnackbarScreen.name,
+      icon: Icons.info_outline),
+  MenuItem(
+      title: 'Animated container',
+      subTitle: 'Stateful widget animado',
+      link: AnimatedScreen.name,
+      icon: Icons.check_box_outline_blank_rounded),
+  MenuItem(
+      title: 'UI Controllers + Tiles',
+      subTitle: 'Controles en Flutter',
+      link: UiControlsScreen.name,
+      icon: Icons.car_rental_outlined),
 ];
