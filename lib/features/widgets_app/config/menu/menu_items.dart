@@ -1,3 +1,5 @@
+import 'package:exercises_apps/features/widgets_app/presentation/screens/counter/counter_screen.dart';
+
 import '../../presentation/screens/screens.dart';
 import 'package:exercises_apps/main/menu_item.dart';
 import 'package:flutter/material.dart' show Icons;
@@ -33,4 +35,19 @@ const appWidgetMenuItems = <MenuItem>[
       subTitle: 'Controles en Flutter',
       link: UiControlsScreen.name,
       icon: Icons.car_rental_outlined),
+  MenuItem(
+      title: 'Introducción a la aplicación',
+      subTitle: 'Pequeño tutorial introductorio',
+      link: AppTutorialScreen.name,
+      icon: Icons.accessible_rounded),
+  MenuItem(
+      title: 'InfiniteScroll y Pull',
+      subTitle: 'Listas infinitas y pull to refresh',
+      link: InfiniteScrollScreen.name,
+      icon: Icons.list_alt_rounded),
+  MenuItem(
+      title: 'Contador',
+      subTitle: 'Contador usando Riverpod',
+      link: CounterScreen.name,
+      icon: Icons.numbers)
 ];

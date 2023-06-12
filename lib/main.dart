@@ -3,12 +3,13 @@ import 'package:exercises_apps/features/tok_tik/presentation/providers/tok_tik_p
 import 'package:exercises_apps/navigation/main_router.dart';
 import 'package:exercises_apps/theme/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart' show ProviderScope;
 import 'package:provider/provider.dart';
 import 'features/tok_tik/infrastructure/repositories/video_post_repository_impl.dart';
 import 'features/yes_no_app/presentation/providers/chat_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

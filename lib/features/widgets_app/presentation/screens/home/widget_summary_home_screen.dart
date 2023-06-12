@@ -3,6 +3,8 @@ import 'package:exercises_apps/main/menu_item.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../widgets/site_menu.dart';
+
 class WidgetSummaryHomeScreen extends StatelessWidget{
   static const String name = "widget_summary_home_screen";
 
@@ -13,8 +15,13 @@ class WidgetSummaryHomeScreen extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: const Text("Widgets App"),
+        // automaticallyImplyLeading: false
       ),
       body: const _HomeView(),
+      drawer: const SideMenu(),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        context.pop();
+      }, child: const Icon(Icons.arrow_back_ios_outlined)),
     );
   }
 }

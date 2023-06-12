@@ -1,6 +1,7 @@
 import 'package:exercises_apps/features/widgets_app/presentation/screens/animated/animated_screen.dart';
 import 'package:exercises_apps/features/widgets_app/presentation/screens/button/buttons_screen.dart';
 import 'package:exercises_apps/features/widgets_app/presentation/screens/card/cards_screen.dart';
+import 'package:exercises_apps/features/widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:exercises_apps/features/widgets_app/presentation/screens/home/widget_summary_home_screen.dart';
 import 'package:exercises_apps/features/widgets_app/presentation/screens/progress/progress_screen.dart';
 import 'package:exercises_apps/features/widgets_app/presentation/screens/screens.dart';
@@ -23,6 +24,9 @@ final router = GoRouter(
       GoRoute(name: SnackbarScreen.name,  path: "/widget-summary/snackbar", builder: (context, state) => const SnackbarScreen()),
       GoRoute(name: AnimatedScreen.name,  path: "/widget-summary/animated", builder: (context, state) => const AnimatedScreen()),
       GoRoute(name: UiControlsScreen.name,  path: "/widget-summary/ui-controls", builder: (context, state) => const UiControlsScreen()),
+      GoRoute(name: AppTutorialScreen.name,  path: "/widget-summary/tutorial", builder: (context, state) => const AppTutorialScreen()),
+      GoRoute(name: InfiniteScrollScreen.name,  path: "/widget-summary/infinite", builder: (context, state) => const InfiniteScrollScreen()),
+      GoRoute(name: CounterScreen.name,  path: "/widget-summary/counter", builder: (context, state) => const CounterScreen()),
     ]
 );
 
