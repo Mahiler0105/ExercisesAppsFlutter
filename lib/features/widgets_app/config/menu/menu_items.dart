@@ -1,4 +1,5 @@
 import 'package:exercises_apps/features/widgets_app/presentation/screens/counter/counter_screen.dart';
+import 'package:exercises_apps/features/widgets_app/presentation/screens/theme_changer/theme_changer_screen.dart';
 
 import '../../presentation/screens/screens.dart';
 import 'package:exercises_apps/main/menu_item.dart';
@@ -49,5 +50,10 @@ const appWidgetMenuItems = <MenuItem>[
       title: 'Contador',
       subTitle: 'Contador usando Riverpod',
       link: CounterScreen.name,
-      icon: Icons.numbers)
+      icon: Icons.numbers),
+  MenuItem(
+      title: 'Gestor de temas',
+      subTitle: 'Gestor de temas usando Riverpod',
+      link: ThemeChangerScreen.name,
+      icon: Icons.color_lens),
 ];

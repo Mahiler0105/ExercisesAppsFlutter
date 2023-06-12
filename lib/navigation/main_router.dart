@@ -6,6 +6,7 @@ import 'package:exercises_apps/features/widgets_app/presentation/screens/home/wi
 import 'package:exercises_apps/features/widgets_app/presentation/screens/progress/progress_screen.dart';
 import 'package:exercises_apps/features/widgets_app/presentation/screens/screens.dart';
 import 'package:exercises_apps/features/widgets_app/presentation/screens/snackbar/snackbar_screen.dart';
+import 'package:exercises_apps/features/widgets_app/presentation/screens/theme_changer/theme_changer_screen.dart';
 import 'package:exercises_apps/features/yes_no_app/presentation/screens/yes_no_app_screen.dart';
 import 'package:go_router/go_router.dart';
 import '../features/tok_tik/presentation/screens/tok_tik_screen.dart';
@@ -27,6 +28,7 @@ final router = GoRouter(
       GoRoute(name: AppTutorialScreen.name,  path: "/widget-summary/tutorial", builder: (context, state) => const AppTutorialScreen()),
       GoRoute(name: InfiniteScrollScreen.name,  path: "/widget-summary/infinite", builder: (context, state) => const InfiniteScrollScreen()),
       GoRoute(name: CounterScreen.name,  path: "/widget-summary/counter", builder: (context, state) => const CounterScreen()),
+      GoRoute(name: ThemeChangerScreen.name,  path: "/widget-summary/theme-changer", builder: (context, state) => const ThemeChangerScreen()),
     ]
 );
 

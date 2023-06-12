@@ -52,8 +52,6 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(title: const Text("App Tutorial")),
-      backgroundColor: Colors.white,
       body: Stack(
         children: [
           PageView(
